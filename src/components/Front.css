@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100.C.C900;1,100.C.C900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+.main-container{
+
+  position: relative;
+  z-index: 10;
+}
+
+.AboutFrontHead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #303135;
+  gap: 10px;
+}
+
+.big-dot {
+  width: 10px;
+  /* Adjust size as needed */
+  height: 10px;
+  /* Adjust size as needed */
+  background-color: white;
+  /* Adjust color as needed */
+  border-radius: 50%;
+  /* Ensures the element is circular */
+}
+
+.AboutFrontHeadText {
+  /* font-weight: 600; */
+  /* letter-spacing: 0.1rem; */
+  font-family: Jost;
+  font-size: 4rem;
+  color: white;
+  /* text-transform: uppercase; */
+}

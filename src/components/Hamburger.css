@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.fillingHam::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(9, 101, 138);
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.fillingHam:hover::before {
+    height: 100%;
+    /* Fill the entire height on hover */
+}
+
+.fillingHam div {
+    z-index: 5;
+}
+
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 350px;
+    height: 0;
+    background-color:#1c1d20;
+    transition: 0.5s;
+}
+
+.nav-bar.active{
+    height: 100%;
+}
+
+.navbarAddon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.navigationNavbar{
+    color: rgb(114, 112, 112);
+}
+
+.navigationLine{
+    color: white;
+    background-color: #575757;
+    height: 1px;
+    width: 250px;
+}
+
+.nav-bar{
+    z-index: 8;
+}
+
+.nav-bar ul{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin: 140px auto 0 30px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav-bar.active ul{ 
+    opacity: 1;
+}
+
+.nav-bar ul li a{
+    margin: 25px;
+    display: block;
+    color: #fefefe;
+    font-size: 2.5rem;
+    transition: 0.2s;
+}
+
+.nav-bar .active ul li{
+    background-color: #fefefe;
+}
+
+.nav-bar.active ul li.Home.active,
+.nav-bar.active ul li.About.active,
+.nav-bar.active ul li.Work.active,
+.nav-bar.active ul li.Contact.active {
+    text-decoration: underline;
+    color: white;
+}
+
+.HamburgerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #303135;
+    /* background-color: #455ce9; */
+    position: fixed;
+    z-index: 9;
+    right: 40px;
+    top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.Hline {
+    width: 20px;
+    height: 2px;
+    background-color: #fefefe;
+    margin: 2px 0;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.Hline.Hline3 {
+    display: block;
+}
+
+.hamburger.open .Hline.Hline1 {
+    transform: translateY(3px) rotate(45deg);
+}
+
+.hamburger.open .Hline.Hline2 {
+    opacity: 0;
+}
+
+.hamburger.open .Hline.Hline3 {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+
+.CCcontactFooterRight {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+    color: white;
+    margin-left: 40px;
+    margin-top: 40px;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.CCsocial {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgb(58, 57, 57);
+    letter-spacing: 0.05rem;
+}
+
+.CCsocialPlatform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.CCfooterText {
+    letter-spacing: 0.005rem;
+}
+
+.CCfooterTextSocial {
+    cursor: pointer;
+}
+
+.CCfooterTextSocial:hover{
+    text-decoration: underline;
+}

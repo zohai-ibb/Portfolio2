@@ -1,0 +1,451 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100.C.C900;1,100.C.C900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Inria Sans', sans-serif;
+font-family: 'Protest Riot', sans-serif;
+font-family: 'Protest Strike', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.fillingo::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.fillingo:hover::before {
+    height: 100%;
+    /* Fill the entire height on hover */
+}
+
+.fillingo div {
+    z-index: 1;
+}
+
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.helpYou {
+    height: 100vh;
+    width: 100%;
+}
+
+.helpYouUpper {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.helpYouUpperin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.Unique {
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.Unique:hover {
+    color: orange;
+}
+
+.Ideas {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 5rem;
+    color: #8a8a8a;
+    /* font-weight: 100; */
+}
+
+.forYour {
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    /* color: #303135; */
+}
+
+.forYour:hover {
+    color: orange;
+}
+
+.Business {
+    font-size: 5rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #8a8a8a;
+}
+
+.helpYouButtonimg {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpYouButtonimg img {
+    width: 100%;
+    height: auto
+}
+
+.helpYouButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 20vw;
+    height: 10vh;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+    letter-spacing: 0.05rem;
+    background-color: orange;
+}
+
+
+.helpYouLower {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    transition: transform 0.2s ease-in-out, gap 0.2s ease-in-out;
+}
+
+.serviceCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 5px;
+    height: 60%;
+    width: 20%;
+    border: 1px solid black;
+    transition: transform 0.2s ease-in-out, margin 0.2s ease-in-out;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.serviceCard:hover {
+    transform: scale(1.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+/* .helpYouLower:hover{
+  gap: 40px
+} */
+
+
+
+.serviceCardHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.serviceCardDescription {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    text-align: center;
+    /* Center text within the container */
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(240, 236, 236);
+    width: 85%;
+    margin: 0 auto;
+}
+
+.line2 {
+    height: 2px;
+    background-color: rgb(49, 48, 48);
+    width: 95%;
+    margin: 70px 20px 0 35px;
+}
+
+
+
+.serviceCardBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 3px;
+    color: black;
+    font-family: 'Roboto';
+    letter-spacing: 0.05rem;
+}
+
+@media (max-width: 823px) {
+    .serviceCard {
+        height: 60%;
+        width: 23%;
+    }
+
+    .Unique {
+        font-size: 4rem;
+
+    }
+
+    .Ideas {
+        font-size: 4rem;
+        /* font-weight: 100; */
+    }
+
+    .forYour {
+        font-size: 4rem;
+
+    }
+
+    .Business {
+        font-size: 4rem;
+    }
+
+
+
+}
+
+@media (max-width: 710px) {
+    .helpYou {
+        height: 140vh;
+    }
+
+    .helpYouUpper {
+        height: 15%;
+        padding-top: 30px;
+
+    }
+
+    .helpYouLower {
+        height: 75%;
+    }
+
+    .helpYouButton {
+        font-size: 1rem;
+    }
+
+    .helpYouLower {
+        flex-direction: column;
+    }
+
+    .serviceCard {
+        height: 160px;
+        width: 270px;
+    }
+
+}
+
+@media (max-width: 657px) {
+
+    .Unique {
+        font-size: 3rem;
+
+    }
+
+    .Ideas {
+        font-size: 3rem;
+        /* font-weight: 100; */
+    }
+
+    .forYour {
+        font-size: 3rem;
+
+    }
+
+    .Business {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 657px) {
+
+    .Unique {
+        font-size: 3rem;
+
+    }
+
+    .Ideas {
+        font-size: 3rem;
+    }
+
+    .forYour {
+        font-size: 3rem;
+    }
+
+    .Business {
+        font-size: 3rem;
+    }
+
+    .helpYouButton {
+        width: 20vw;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 515px) {
+
+    .helpYou {
+        height: 130vh;
+    }
+
+    .helpYouUpper {
+        margin-top: 10px;
+        padding-top: 0;
+        height: 15%;
+    }
+
+    .helpYouLower {
+        height: 75%;
+    }
+
+    .helpYouUpperin {
+        gap: 10px;
+
+    }
+
+    .Unique {
+        font-size: 2rem;
+
+    }
+
+    .Ideas {
+        font-size: 2rem;
+    }
+
+    .forYour {
+        font-size: 2rem;
+
+    }
+
+    .Business {
+        font-size: 2rem;
+    }
+
+    .helpYouButton {
+        font-size: 0.5rem;
+
+        width: 20vw;
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .helpYou {
+        height: 120vh;
+
+    }
+
+    .serviceCard {
+        height: 140px;
+        width: 230px;
+    }
+
+    .serviceCardHeading {
+        font-size: 1.2rem;
+    }
+
+    .serviceCardDescription {
+        font-size: 0.65rem;
+    }
+
+    .serviceCardBtn {
+        height: 25px;
+        width: 60px;
+    }
+
+}
+
+
+@media (max-width: 332px) {
+    .helpYouUpperin {
+        gap: 10px;
+
+    }
+
+    .Unique {
+        font-size: 1.8rem;
+
+    }
+
+    .Ideas {
+        font-size: 1.8rem;
+
+    }
+
+    .forYour {
+        font-size: 1.8rem;
+
+    }
+
+    .Business {
+        font-size: 1.8rem;
+
+    }
+
+    .helpYouButton {
+        font-size: 0.5rem;
+
+        width: 20vw;
+        height: 40px;
+    }
+
+}

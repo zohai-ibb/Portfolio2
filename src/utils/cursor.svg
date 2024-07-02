@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Circle -->
+  <circle cx="40" cy="40" r="32" fill="#00008b" />
+  <!-- Plus sign -->
+  <line x1="28" y1="40" x2="52" y2="40" stroke="#000" stroke-width="4" />
+  <line x1="40" y1="28" x2="40" y2="52" stroke="#000" stroke-width="4" />
+</svg>

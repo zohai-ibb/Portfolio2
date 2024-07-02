@@ -1,0 +1,59 @@
+.main-container {
+    position: relative;
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+}
+
+.fall1 {
+    animation: fall1 1s linear 0s 1 normal forwards;
+}
+
+.fall2 {
+    animation: fall2 1s linear 0s 1 normal forwards;
+}
+
+.fall3 {
+    animation: fall3 1s linear 0s 1 normal forwards;
+}
+
+@keyframes fall1 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate3d(2, -1, -1, -0.4turn) translateY(100px);
+    }
+}
+
+@keyframes fall2 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate3d(2, 1, 1, 0.4turn) translateY(100px);
+    }
+}
+
+@keyframes fall3 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: rotate3d(2, 2, 2, 0.4turn) translateY(100px);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+  

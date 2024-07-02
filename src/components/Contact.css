@@ -1,0 +1,361 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100.C.C900;1,100.C.C900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Cfilling::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(9, 101, 138);
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.Cfilling:hover::before {
+    height: 100%;
+    /* Fill the entire height on hover */
+}
+
+.Cfilling div {
+    z-index: 5;
+}
+
+.Cfilling2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(4, 53, 126);
+    transition: height 0.5s ease;
+    z-index: -1;
+}
+
+.Cfilling2:hover::before {
+    height: 100%;
+    /* Fill the entire height on hover */
+}
+
+.Cfilling2 div {
+    z-index: 5;
+}
+
+.Clink2:hover{
+    text-decoration: underline;
+}
+
+.Ccontact {
+    height: 100vh;
+    width: 100%;
+    background-color: #212122;
+}
+
+.CworkTogether {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55%;
+    width: 100%;
+    gap: 25rem;
+    /* background-color: aqua; */
+}
+
+.CactualWorkTogether {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 5rem;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.CactualWorkTogetherInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    object-fit:fill;
+
+}
+
+.CactualWorkTogetherInner img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+.CarrowDown {
+    display: flex
+}
+
+.CarrowDown img {
+    transform: scaleX(-1);
+}
+
+.Cline8 {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: rgb(121, 116, 116);
+    width: 65%;
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+.CgetInTouch {
+    letter-spacing: -0.C05rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: -25%;
+    right: 20%;
+    height: 180px;
+    color: white;
+    width: 180px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(9, 101, 138);
+    cursor: pointer;
+    border: none;
+    z-index: 1;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.CgetInTouch:hover {
+    color: white;
+    /* background-color: 1px solid rgb(21, 79, 236); */
+}
+
+.CcontactButtons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 30%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.CcontactButtonsInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    color: white;
+    letter-spacing: 0.001rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.CemailBtn {
+    margin-left: 230px;
+    height: 12vh;
+    width: 22vw;
+}
+
+.CnumberBtn {
+    height: 12vh;
+    width: 17vw;
+}
+
+.CcontactFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+    /* background-color: aqua; */
+    gap: 40rem;
+    color: white;
+    /* gap: 20px; */
+}
+
+.CcontactFooterLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 0.8rem;
+    gap: 50px;
+}
+
+.Cversion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.CactualVersion {
+    font-size: 0.6rem;
+}
+
+.CactualLocalTimer {
+    font-size: 0.6rem;
+}
+
+.ClocalTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.CcontactFooterRight {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.Csocial {
+    font-size: 0.7rem;
+}
+
+.CsocialPlatform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.CfooterText {
+    font-weight: 500;
+    letter-spacing: 0.005rem;
+}
+
+.CfooterTextSocial {
+    cursor: pointer;
+
+}
+
+
+@media (max-width: 1177px) {
+    .CcontactFooterLeft {
+        display: none;
+    }
+
+    .CgetInTouch {
+        height: 150px;
+        width: 150px;
+    }
+
+    .CarrowDown {
+        display: none;
+    }
+
+}
+
+@media (max-width: 818px) {
+
+    .CgetInTouch {
+        font-size: 0.7rem;
+        right: 20px;
+        height: 100px;
+        width: 100px;
+    }
+
+    .CcontactButtonsInner {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 625px) {
+
+    .CactualWorkTogether {
+        font-size: 3rem;
+    }
+
+    .CemailBtn {
+        margin-left: 180px;
+    }
+
+    .CcontactButtonsInner {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .CactualWorkTogether {
+        font-size: 2rem;
+    }
+
+    .CgetInTouch {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        top: 80%
+    }
+
+    .CcontactButtonsInner {
+        font-size: 0.6rem;
+    }
+
+    .CactualWorkTogetherInner img {
+        width: 40px;
+    }
+
+    .CemailBtn {
+        margin-left: 100px;
+        height: 50px;
+        width: 120px;
+    }
+
+    .CnumberBtn {
+        height: 50px;
+        width: 100px;
+    }
+
+}
+
+@media (max-width: 345px) {
+
+    .CemailBtn {
+        margin-left: 50px;
+    }
+
+    .CcontactFooterRight {
+        font-size: 0.5rem;
+    }
+
+}
+
+@media (max-width: 290px) {
+
+    .CemailBtn {
+        margin-left: 20px;
+    }
+
+    .CcontactFooterRight {
+        font-size: 0.5rem;
+    }
+
+}
